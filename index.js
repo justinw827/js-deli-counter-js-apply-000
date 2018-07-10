@@ -5,9 +5,12 @@ var katzDeliLine = [];
 // @param katzDeliLine  Array of current customers in line
 // @param nameIn        New person's name
 // @return              "Welcome, <nameIn>. You are number <array length> in line."
-function takeANumber(katzDeliLine, nameIn) {
-  katzDeliLine.push(nameIn);
-  var retVal = "Welcome, " + nameIn + ". You are number " + katzDeliLine.length + " in line.";
+
+var count = 0;
+function takeANumber(katzDeliLine) {
+  katzDeliLine.push(count);
+  var retVal = "You are number " + count + ". You are number " + katzDeliLine.length + " in line.";
+  count++;
   return retVal;
 }
 
