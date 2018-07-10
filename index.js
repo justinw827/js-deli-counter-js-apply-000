@@ -3,7 +3,7 @@ var katzDeliLine = [];
 // Takes in the current line of people and the new person's name.
 // Returns a string that tells the customer their place in line.
 // @param katzDeliLine  Array of current customers in line
-// @param nameIn        New person's nameIn
+// @param nameIn        New person's name
 // @return              "Welcome, <nameIn>. You are number <array length> in line."
 function takeANumber(katzDeliLine, nameIn) {
   katzDeliLine.push(nameIn);
