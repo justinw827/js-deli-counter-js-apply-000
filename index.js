@@ -33,7 +33,7 @@ function currentLine(katzDeliLine) {
   var retVal = "The line is currently: ";
   
   if (katzDeliLine.length > 0) {
-    for (var i = 0; i < katzDeliLine.length; i++) {
+    for (var i = 0; i < katzDeliLine.length; i++) { // Could've been a while loop
       if (i !== katzDeliLine.length - 1) { // Check it's end of array
         retVal += ((i+1) + '. ' + katzDeliLine[i] + ', '); 
       } else {
